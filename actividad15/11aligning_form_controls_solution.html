@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    
+    <div class="headi">
+		<a class="textcolor" href="../index.html" >INICIO</a>
+        <a href="../index.html" title="INICIO"><img src="../logo.png" alt="logo" width="60" height="60"</a>        
+        <a class="textcolor" href="../index.html" >ADSI🎓 Nader Montenegro</a> 
+    </div>
+    
+        <style>
+          .headi { height: 60px; background-color: #00408A;
+                font-size: 25px; padding: 16px; text-align: center;}
+           .textcolor { color: #FFFFFF; }
+        </style>
+
+<title>Aligning Form Controls - Solution</title>
+<style type="text/css">
+    body {
+        font-family: Arial, Verdana, sans-serif;
+    }
+
+    .div1 {
+        border-bottom: lpx solid #efefef;
+        margin: 10px;
+        padding-bottom: 10px;
+        width: 460px;
+    }
+
+    .title {
+        float: left;
+        width: 100px;
+        text-align: right;
+        padding-right: 10px;
+    }
+
+    .radio-buttons label {
+        float: none;
+    }
+
+    .submit {
+        text-align: right;
+    }
+</style>
+</head>
+
+<body>
+    <br /> 
+<form action="example.php" method="post">
+    <div class="div1">
+        <label for="name" class="title">Name:</label>
+        <input type="text" id="name" name="name" />
+    </div>
+
+    <div class="div1">
+        <label for="email" class="title">Email:</label>
+        <input type="email" id="email" name="email" />
+    </div>
+    <div class="radio-buttons">
+        <span class="title">Genero:</span>
+        <input type="radio" name="gender" id="male" value="M" />
+        <label for="male">M</label>
+        <input type="radio" name="gender" id="female" value="F" />
+        <label for="female">F</label><br />
+    </div>
+    <div class="submit">
+        <input type="submit" value="Register" id="submit" />
+    </div>
+</form>
+<p>Cada fila del formulario tiene un título que le dice a los usuarios lo que necesitan
+    para ingresar. Para las entradas de texto, el título está en el elemento &lt;label&gt;.
+    Para los botones de radio, el título está en un elemento &lt;span&gt;. Ambos tienen un
+    atributo de clase con un valor de title. </p>
+<p>Al establecer la propiedad width en esos elementos, sabemos que los títulos
+    tendrán el mismo ancho. Por lo tanto, los controles de formulario que se encuentran
+    en el interior se alinean.</p>
+</body>
+
+</html>

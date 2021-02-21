@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    
+    <div class="headi">
+		<a class="textcolor" href="../index.html" >INICIO</a>
+        <a href="../index.html" title="INICIO"><img src="../logo.png" alt="logo" width="60" height="60"</a>        
+        <a class="textcolor" href="../index.html" >ADSI🎓 Nader Montenegro</a> 
+    </div>
+    
+        <style>
+          .headi { height: 60px; background-color: #00408A;
+                font-size: 25px; padding: 16px; text-align: center;}
+           .textcolor { color: #FFFFFF; }
+        </style>
+
+<title>Aligning Form Controls - Problem</title>
+<style type="text/css">
+    body {
+        font-family: Arial, Verdana, sans-serif;
+    }
+</style>
+</head>
+
+<body>
+    <br />
+<form action="example.php" method="post">
+    <div>
+        <label for="name" class="title">Name:</label>
+        <input type="text" id="name" name="name" />
+    </div>
+    <div>
+        <label for="email" class="title">Email:</label>
+        <input type="email" id="email" name="email" />
+    </div>
+    <div class="radio-buttons">
+        <span class="title">Gender:</span>
+        <input type="radio" name="gender" id="male" value="M" />
+        <label for="male">M</label>
+        <input type="radio" name="gender" id="female" value="F" />
+        <label for="female">F</label><br>
+    </div>
+    <div class="submit">
+        <input type="submit" value="Register" id="submit" />
+    </div>
+</form>
+<p>Las etiquetas de los elementos de formulario suelen ser longitudes diferentes,
+    lo que significa que los controles del formulario no aparecerán en línea recta.</p>
+</body>
+
+</html>
